@@ -46,6 +46,6 @@ git commit 放到分支上
 #### 2.2 撤销
 ###### 撤销尚未add的文件
 git checkout -- readme.txt
-###### 撤销add的文件
+###### 撤销add的文件,但没有commit的
 通过 git status 发现问题
 git reset HEAD README.md
