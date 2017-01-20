@@ -24,5 +24,16 @@ git push -u origin master //推送到远程库origin 的master分支上- -u是�
 git status  查看当前工作区状态
 git diff    查看工作区修改的文件 ctrl+z 退出
 
-ddddd
-eeeee
+git add README.md
+git commit -m 'commit'
+[master 3628164] append GPL
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+git log 查看提交历史记录
+
+######  回到19世纪
+ git reset --hard HEAD^ ^^^表示回退版本个数
+#####   回到21世纪
+ git reset --hard 3628164 提交时候的版本号
+###### 查看commit版本号
+git reflog
