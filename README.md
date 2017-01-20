@@ -20,7 +20,7 @@ git remote add origin git@github.com:***/git-test.git //添加到远程库
 #
 git push -u origin master //推送到远程库origin 的master分支上- -u是与远程的master分支做关联，用在第一次创建分支时候以后就不需要-u了
 
-### 2.1 多啦A梦的时光机
+### 2.1 多啦A梦的时光
 git status  查看当前工作区状态
 git diff    查看工作区修改的文件 ctrl+z 退出
 
@@ -49,3 +49,8 @@ git checkout -- readme.txt
 ###### 撤销add的文件,但没有commit的
 通过 git status 发现问题
 git reset HEAD README.md
+
+###### 删除文件
+git rm file 删除
+git commit file -m 'remove file'
+git push orgin master
