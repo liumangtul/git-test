@@ -51,6 +51,9 @@ git checkout -- readme.txt
 git reset HEAD README.md
 
 ###### 删除文件
-git rm file 删除
-git commit file -m 'remove file'
-git push orgin master
+git rm file 删除;
+git commit file -m 'remove file';
+git push orgin master;
+
+
+http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013743862006503a1c5bf5a783434581661a3cc2084efa000
