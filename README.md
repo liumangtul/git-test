@@ -57,3 +57,12 @@ git push orgin master;
 
 
 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013743862006503a1c5bf5a783434581661a3cc2084efa000
+
+#### 3.1 分支
+创建分支
+git branch dev 创建dev分支
+git checkout -b dev 创建dev并切换到该分支
+切换分支
+git checkout dev 切换到dev分支
+查看分支list
+git branch  当前分支标*
