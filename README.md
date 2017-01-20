@@ -66,10 +66,27 @@ git branch dev 创建dev分支
 ##
 git checkout -b dev 创建dev并切换到该分支
 ##
+
 切换分支:
 ##
 git checkout dev 切换到dev分支
 ##
+
 查看分支list
 ##
 git branch  当前分支标*
+##
+
+合并分支
+##
+git merge dev
+把dev分支合并到当前分支上
+##
+
+删除分支
+##
+git branch -d dev
+##
+删除dev分支
+
+### 解决冲突
