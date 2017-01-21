@@ -60,29 +60,21 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
 
 #### 3.1 分支
 创建分支:  
-git branch dev 创建dev分支
-git checkout -b dev 创建dev并切换到该分支
+git branch dev 创建dev分支  
+git checkout -b dev 创建dev并切换到该分支  
 
-切换分支:
-##
-git checkout dev 切换到dev分支
-##
+切换分支:  
+git checkout dev 切换到dev分支  
 
-查看分支list
-##
-git branch  当前分支标*
-##
+查看分支list  
+git branch  当前分支标*  
 
-合并分支
-##
-git merge dev
-把dev分支合并到当前分支上
-##
+合并分支  
+git merge dev  
+把dev分支合并到当前分支上  
 
-删除分支
-##
-git branch -d dev
-##
-删除dev分支
+删除分支  
+git branch -d dev  
+删除dev分支  
 
 ### 解决冲突
