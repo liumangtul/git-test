@@ -91,4 +91,27 @@ git branch -d dev
 如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream   branch-name origin/branch-name。  
 
 这就是多人协作的工作模式，一旦熟悉了，就非常简单。  
-  
+
+## 标签管理  
+##### create Tag  
+
+  git branch
+  git checkout master 切换分支  
+  git tag v1.0 打标签  
+  git tag 查看所有标签  
+  git tag v0.9 6224937  对log里的commit id 某个d打tag  
+  git show tagName 查看标签信息  
+
+  -a 指定tagName -m tag说明
+  git tag -a v0.1 -m "version 0.1 released" 3628164
+
+##### controll Tag
+
+  git tag -d v0.1 删除tag  
+  git push origin <tagname>  推送某个标签到远程  
+  git push origin --tags 推送所有tag到远程  
+
+  如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除：  
+  git tag -d <tagname>  
+  然后，从远程删除。删除命令也是push，但是格式如下：  
+  git push origin :refs/tags/<tagname>  
