@@ -55,8 +55,6 @@ git commit file -m 'remove file';
 git push orgin master;  
 
 
-http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013743862006503a1c5bf5a783434581661a3cc2084efa000  
-
 #### 3.1 分支  
 创建分支:  
 git branch dev 创建dev分支  
@@ -139,9 +137,9 @@ sudo chown -R git:git sample.git
 
 第五步，禁用shell登录：  
 出于安全考虑，第二步创建的git用户不允许登录shell，这可以通过编辑/etc/passwd文件完成。找到类似下面的一行：  
-git:x:1001:1001:,,,:/home/git:/bin/bash  
+git : x:1001:1001:,,,:/home/git:/bin/bash  
 改为：  
-git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell  
+git : x:1001:1001:,,,:/home/git:/usr/bin/git-shell  
 这样，git用户可以正常通过ssh使用git，但无法登录shell，因为我们为git用户指定的git-shell每次一登录就自动退出。  
 
 第六步，克隆远程仓库：  
@@ -150,5 +148,7 @@ git clone git@server:/srv/sample.git
 Cloning into 'sample'...  
 warning: You appear to have cloned an empty repository.  
 
-  
+
 # END
+
+http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137586810169600f39e17409a4358b1ac0d3621356287000
