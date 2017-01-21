@@ -20,7 +20,7 @@ git remote add origin git@github.com:***/git-test.git //添加到远程库
 
 git push -u origin master //推送到远程库origin 的master分支上- -u是与远程的master分支做关联，用在第一次创建分支时候以后就不需要-u了
 
-### 2.1 多啦A梦的时光  
+### 2.1 多啦A梦的时光机  
 git status  查看当前工作区状态  
 git diff    查看工作区修改的文件 ctrl+z 退出  
 
@@ -77,3 +77,18 @@ git branch -d dev
 删除dev分支  
 
 ### 解决冲突
+
+### 多人协作的工作模式通常是这样：  
+
+首先，可以试图用git push origin branch-name推送自己的修改；  
+
+如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；  
+
+如果合并有冲突，则解决冲突，并在本地提交；  
+
+没有冲突或者解决掉冲突后，再用git push origin branch-name推送就能成功！  
+
+如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream   branch-name origin/branch-name。  
+
+这就是多人协作的工作模式，一旦熟悉了，就非常简单。  
+  
