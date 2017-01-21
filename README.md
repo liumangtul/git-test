@@ -70,9 +70,11 @@ git branch  当前分支标*
 git merge dev  
 把dev分支合并到当前分支上  
 
-删除分支  
+删除本地分支  
 git branch -d dev  
-删除dev分支  
+删除远程分支  
+git branch -r -d origin/dev  
+git push origin :dev  推送到远程
 
 ### 解决冲突
 
