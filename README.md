@@ -1,4 +1,4 @@
-## 测试命令行git功能
+# 命令行git功能
 
 ### 1.1.Linux
 mkdir git-test -->创建目录
